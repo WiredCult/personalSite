@@ -1,0 +1,48 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
+  \*********************************************************************************************************/
+#renamon {
+  transition-duration: 2s;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#renamon:hover {
+  animation: 1s ease-out 0s 1 move;
+}
+
+h1 {
+  text-align: center;
+  animation: 0.5s linear 0s 1 fadeIn;
+}
+
+#backgroundColor {
+  transition: all 5s;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes color {
+  from {
+    background-color: #ffccfc;
+  }
+  to {
+    background-color: #ffc793;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
